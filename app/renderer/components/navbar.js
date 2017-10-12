@@ -77,6 +77,7 @@ module.exports = {
         onTabSelected(index) {
             AppStatus.activeSuite = index;
         },
+        //look here for tab control
         selectTab(index) {
             if (index >= this.suites.length) index = this.suites.length - 1;
             this.$nextTick(() => {
